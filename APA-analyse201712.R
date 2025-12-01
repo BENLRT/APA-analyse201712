@@ -49,8 +49,8 @@ df_clean$sexe <- ifelse(df_clean$sexe == "1","Homme","Femme")
 ## Keeping only more or equal to age of 60yo (minimum age for APA)
 df_clean <- df_clean[df_clean$age >= 60,]
 
-## Filtering columns before 01-01-2018
-df_clean <- df_clean[df_clean$date_ouverture_droit < as.Date("2018-01-01"), ]
+## Filtering columns : 2017 & december
+df_clean <- df_clean[format(df_clean$date_ouverture_droit, "%Y-%m") == "2017-12", ]
 
 ## Filtering columns on GIR 1 and GIR 2
 df_clean <- df_clean[df_clean$gir < 3,]
