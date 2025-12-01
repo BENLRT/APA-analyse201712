@@ -14,17 +14,22 @@
 ## Loading dataset
 load(url("https://data.drees.solidarites-sante.gouv.fr/api/datasets/1.0/beneficiaires-apa-a-domicile-base-floutee-v1/attachments/ben_apad_floutee_v1_rdata/"))
 df <- echantillon_diffusion
+
 ## Exploring columns and lines
+cat("\n Structure of the dataframe \n")
 print(str(df))
 
 ## Count number of na values
+cat("\n Number of NA values \n")
 print(sum(is.na(df)))
 print(colSums(is.na(df)))
 
 ## Sum number of duplicated value 
 ### (they won't be cleaned as a line does not have any unique id 
 ### or if there is a duplicated value we cannot say if it's normal or not)
-print(sum(duplicated(df))) 
+cat("\n Number of duplicated values \n")
+print(sum(duplicated(df)))
+
 
 
 # CLEANING 
