@@ -1,5 +1,7 @@
 # APA-analyse201712
-Compute average age of GIR1 and GIR2 beneficiaries, including breakdown by sex
+- Self-taught R to analyze the dataset of home-based APA beneficiaries (DREES)
+- Database : https://data.drees.solidarites-sante.gouv.fr/explore/dataset/beneficiaires-apa-a-domicile-base-floutee-v1/information/
+- Compute average age of GIR1 and GIR2 beneficiaries, including breakdown by sex. 
 
 | Variable            | Type               | Description                                                                                                     |
 | ------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------- |
